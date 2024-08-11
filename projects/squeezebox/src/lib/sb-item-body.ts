@@ -9,7 +9,7 @@ import {Component, ElementRef, Renderer2, ViewChild} from '@angular/core';
         </div>
     `,
     styleUrls: [
-        './styles.css'
+        '../../assets/styles/styles.css'
     ]
 })
 export class SBItemBody {

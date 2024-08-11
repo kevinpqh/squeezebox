@@ -1,6 +1,6 @@
 {
-  "name": "squeezebox",
-  "version": "1.0.0",
+  "name": "@kevinpqh/squeezebox",
+  "version": "1.0.1",
   "description": "Angular simple accordion component",
   "keywords": [],
   "license": "MIT",

@@ -1,7 +1,6 @@
-[<img src="https://david-dm.org/asotog/squeezebox.svg">](https://david-dm.org/asotog/squeezebox)
-
 # Squeezebox
-Simple Angular 2 accordion component with smooth transitions/animations
+Simple Angular accordion component with smooth transitions/animations.
+This package is an update of [squeezebox](https://www.npmjs.com/package/squeezebox)
 
 <img alt="Screenshot 1" width="300" src="https://raw.githubusercontent.com/asotog/squeezebox/master/screenshot-1.png">
 
@@ -9,12 +8,12 @@ Simple Angular 2 accordion component with smooth transitions/animations
 Running sample can be seen [here](http://plnkr.co/edit/S9S8NBP1Ha8JKM6QjjmT?p=preview) , but this is not for real use case, so for real usage take a look at the following references: installation via npm, typescript usage, etc
 
 ### Installation via npm
-` npm install squeezebox --save`
+` npm i @kevinpqh/squeezebox`
 
 ### Typescript Usage
 Import the module wherever is going to be used:
 
-`import {SqueezeBoxModule} from 'squeezebox/dist';`
+`import { SqueezeBoxModule } from '@kevinpqh/squeezebox';`
 
 
 
@@ -50,6 +49,12 @@ or iterate a data list
         <sb-item-body>{{item.description}}</sb-item-body>
     </sb-item>
 </squeezebox>
+```
+
+### Styles
+Styles needs to be included or imported, also feel free to modify the styles:
+```
+@import '@kevinpqh/squeezebox/assets/styles/styles.css';
 ```
 
 ### Inputs
@@ -89,36 +94,3 @@ onTabActive(event:Event) {
 ...
 ```
 
-### SystemJS configuration
-Will need to [map](https://github.com/systemjs/systemjs/blob/master/docs/config-api.md#map) the module:
-```
-map: {
-    "squeezebox": "npm:squeezebox",
-    ...
-}
-```
-And set the package configuration:
-```
-packages: {
-      ...
-      squeezebox: { 
-        main: './index.ts',
-        defaultExtension: 'ts' 
-      },
-      ...
-```
-
-If you are not compiling third party javascript, you can try the following configuration so you can use generated files:
-```
-squeezebox: {
-    defaultExtension: 'js',
-    main: 'index.js'
-}
-```
-
-
-### Styles
-Styles needs to be included, imported or copied, also feel free to modify the styles:
-```
-<link rel="stylesheet" href="/node_modules/squeezebox/styles.css">
-```

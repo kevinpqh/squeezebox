@@ -10,7 +10,7 @@ import {SBItem} from './sb-item';
         </div>
     `,
     styleUrls: [
-        './styles.css'
+        '../../assets/styles/styles.css'
     ]
 })
 export class SqueezeBox {

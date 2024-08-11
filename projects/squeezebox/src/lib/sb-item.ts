@@ -11,7 +11,7 @@ import {SqueezeBox} from './squeezebox';
         </div>
     `,
     styleUrls: [
-        './styles.css'
+        '../../assets/styles/styles.css'
     ]
 })
 export class SBItem {
