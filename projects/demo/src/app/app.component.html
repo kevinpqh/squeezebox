@@ -1,0 +1,45 @@
+<h1>Demo</h1>
+<div>
+  <squeezebox [multiple]="false">
+      <sb-item  *ngFor="let item of itemsList" (onToggled)="itemWasToggled($event)">
+          <sb-item-head>{{item.title}}</sb-item-head>
+          <sb-item-body>{{item.description}}</sb-item-body>
+      </sb-item>
+  </squeezebox>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h3>Already expanded</h3>
+<div>
+  <squeezebox [multiple]="false">
+      <sb-item>
+          <sb-item-head>Item 1</sb-item-head>
+          <sb-item-body>Lorem ipsum dolor</sb-item-body>
+      </sb-item>
+      <sb-item [collapsed]="false">
+          <sb-item-head>Item 2</sb-item-head>
+          <sb-item-body>Lorem ipsum dolor</sb-item-body>
+      </sb-item>
+  </squeezebox>
+</div>
+
+<h3>Hidden Test</h3>
+<div style="display: none;">
+  <squeezebox [multiple]="false">
+      <sb-item [collapsed]="false">
+          <sb-item-head>Item 1</sb-item-head>
+          <sb-item-body>Lorem ipsum dolor</sb-item-body>
+      </sb-item>
+      <sb-item>
+          <sb-item-head>Item 2</sb-item-head>
+          <sb-item-body>Lorem ipsum dolor</sb-item-body>
+      </sb-item>
+  </squeezebox>
+</div>
+
+<button (click)="refreshClick($event)">Refresh Hidden Tab Test</button>
